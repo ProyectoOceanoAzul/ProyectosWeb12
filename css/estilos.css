@@ -1,0 +1,628 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+
+    outline: 1px solid red;
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--colorFondoBody);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth;
+
+}
+
+
+/*Estilos generales*/
+:root{
+    --colorFondoBody: #FFFFFF ;
+
+    --colorEstilo1:#5e5b5b;
+    --colorEstilo2:#EFEFEF;
+    --colorEstilo3: #FFFFFF;;
+
+    --colorTexto1: #000000;
+    --colorTexto2: #FFFFFF;
+}
+
+
+/*Estilos genraels*/
+h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    color: var(--colorTexto2);
+}
+
+
+
+h2{
+    font-size: 6em;
+}
+
+h3{
+    font-size: 5.5rem;
+}
+
+h4{
+    font-size: 1.7rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--colorTexto2);
+}
+
+a:hover{
+    text-decoration: underline;    
+}
+
+p{
+    font-size: 1.3rem;
+    line-height: 1.68rem;
+    margin: 10px 0;
+}
+
+
+
+/*contenedor*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+
+
+    overflow: auto; /***********************/
+}
+
+/*mostrar pantalla compleata*/
+header.contenedor__header{
+    height: 100vh;
+    background-color: var(--colorTexto1);
+    
+    padding-top: 20px;
+}
+
+
+/*contenedor__superior*/
+nav.contenedor__superior{
+    overflow: auto;
+    padding-bottom: 20px;   
+    
+    background-color: var(--colorTexto1);
+
+    
+}
+
+
+div.superior__logo{
+    float: left;
+}
+
+div.superior__menu{
+    float: right;
+}
+
+ul.menu__opciones{
+    list-style: none;
+}
+
+ul.menu__opciones li{
+    float: left;
+}
+
+ul.menu__opciones li a{
+    display: block; /*****************************************/
+    padding: 20px;
+
+    font-weight: 400;  
+    text-align: center;
+}
+
+
+
+/*banner*/
+section.contenedor__banner{
+    padding: 120px 0;
+
+    background-color: var(--colorEstilo3);
+    margin: auto;
+}
+
+
+div.banner__titulo{
+    width: 70%;
+    margin: auto;    
+}
+
+div.banner__titulo h2{
+    font-size: 6rem;
+}
+
+
+/**/
+div.banner__texto{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+div.texto__lado1{
+    float: left;
+    width: 28%;
+}
+
+
+
+div.texto__lado2{
+    float: left;
+    width: 72%;    
+}
+
+div.texto__lado2 p{
+    padding-right: 200px;
+    font-size: 1.25rem;
+    line-height: 2.3rem;    
+    margin-top: 0;
+}
+
+h3{
+    font-size: 5rem!important;
+}
+
+
+
+
+
+/*contenedor__about*/
+section.contenedor__about{
+    padding: 120px 0;
+    background-color: var(--colorEstilo2);
+}
+
+section.contenedor__contact{
+    padding: 120px 0 70px 0;
+    background-color: var(--colorTexto1);       /******************************/
+}
+
+
+/**/
+div.about__titulo h4{
+    font-size: 5rem;
+    text-align: left;
+}
+
+div.contact__titulo h4{
+    font-size: 5rem;
+    text-align: right;
+
+    color: var(--colorTexto2);
+}
+
+
+/**/
+div.lado1{
+    float: left;
+    width: 60%;
+}
+
+
+div.lado2{
+    float: left;
+    width: 40%;
+}
+
+
+div.lado2 img{
+    width: 100%;
+    float: right;
+}
+
+div.lado2 img:hover{
+    opacity: 0.9;
+}
+
+
+div.contact__formulario{
+    float: left;
+    width: 50%;
+}
+
+div.contact__titulo{
+    float: left;
+    width: 50%;
+}
+
+
+p{
+    font-size: 1rem;
+    padding-right: 90px;
+    margin-bottom: 30px;
+}
+
+p.parrafo1{
+    padding-top: 90px;
+    font-weight: 700;
+}
+
+
+
+div.contact__formulario{
+    padding-top: 90px;
+}
+
+div.form__group{
+    margin-bottom: 1rem;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    color: var(--colorTexto2);
+}
+
+input.form__control
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+
+    border: none;
+}
+
+
+textarea.form__control
+{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+
+    border: none;
+}
+
+button.btn{
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    font-weight: 600;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+button.btn--gray:hover{
+    background-color: #00000096;
+    color: var(--colorEstilo2);
+}
+
+
+/*contenedor__footer*/
+footer.contenedor__footer{
+    background-color: var(--colorTexto1);
+}
+
+div.pie__titulo p{
+    text-align: center;
+    font-size: small;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    color: var(--colorTexto2);
+}
+
+span{
+    color: var(--colorTexto2);
+    font-weight: 600;
+}
+
+
+
+
+
+/*responsive 1*/
+@media only screen and  (max-width: 575.98px) and
+                        (max-width: 767.98px) and
+                        (max-width: 991.98px) and
+                        (max-width: 1199.98px) and
+                        (max-width: 1399.98px)
+{
+
+    div.superior__logo{            
+            float: none;
+            text-align: center;
+        }
+
+    div.superior__menu{
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    ul.menu__opciones li{
+        float: none;
+    }
+
+    ul.menu__opciones li a{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+
+    header.contenedor__header{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+
+
+
+
+
+
+
+
+    /**********************/
+    section.contenedor__banner{
+        padding: 60px 0;
+    }
+
+    div.banner__titulo{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    h2.titulo__banner{
+        font-size: 2.8rem;
+        text-align: center;
+        
+    }
+
+
+
+    /*texto*/
+    div.banner__texto{
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+
+    div.texto__lado1{
+        float: none;
+        width: 100%;
+        
+    }
+
+
+    h2.titulo__banner{
+        font-size: 3rem!important;
+        text-align: center;        
+    }
+
+
+    div.texto__lado1 h3{
+        width: 100%;
+        font-size: 2.5rem !important;
+        text-align: center;
+
+        font-weight: 500;
+    }
+
+
+    div.texto__lado2{
+        float: none;
+        width: 100%;
+        padding: 0px;
+    }
+
+    div.texto__lado2 p{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+
+
+
+    /**********************/
+    section.contenedor__about{
+        padding: 60px 0;
+    }
+
+
+
+
+    div.about__titulo{
+        float: none;
+        width: 100%;
+    }
+
+    div.about__titulo h4{
+        text-align: center;
+
+        font-size: 2.5rem;
+    }
+
+
+    div.about__grupo div.lado1{
+        float: none;
+        width: 100%;
+    }
+
+    div.about__grupo div.lado1 p{
+        text-align: justify;
+        margin: auto;
+
+        padding: 10px;
+    }
+
+    div.about__grupo div.lado2{
+        float: none;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    section.contenedor__contact{
+        padding: 60px 0;
+    }
+
+
+    div.contact__formulario{
+        float: none;
+        width: 100%;
+    }
+
+
+    div.contact__titulo{
+        float: none;
+        width: 100%;
+    }
+
+
+    div.contact__titulo h4{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+
+    div.contact__formulario{
+        padding-top: 0;
+    }
+
+
+
+
+}
+
+
+
+
+/*Responsive 2*/
+@media(max-height: 1024px) {
+    header.contenedor__header{
+        height: 100%;  
+    }
+
+    h2.titulo__banner{
+        font-size: 4rem;
+    }
+
+    div.texto__lado1 h3{
+        font-size: 2.5rem;
+    }
+
+
+
+}
+
+
+/*Responsive 3*/
+@media  screen and (max-width: 768px){
+
+    div.texto__lado1{
+        float: none;
+        width: 100%;
+    }
+
+    div.texto__lado2{
+        float: none;
+        width: 100%;
+    }
+
+    div.texto__lado2 p{
+        padding: 10px;
+        text-align: justify;
+    }
+
+}
+
+
+
+
+
+/*Responsive 4*/
+@media  screen and (max-width: 834px){
+
+    div.texto__lado1{
+        float: none;
+        width: 100%;
+    }
+
+    div.texto__lado2{
+        float: none;
+        width: 100%;
+    }
+
+    div.texto__lado2 p{
+        padding: 10px;
+        text-align: justify;
+    }
+
+}
+
+
+
+
+
+/*Responsive 5*/
+@media  screen and (max-width: 768px){
+
+    div.texto__lado1{
+        float: none;
+        width: 100%;
+    }
+
+    div.texto__lado2{
+        float: none;
+        width: 100%;
+    }
+
+    div.texto__lado2 p{
+        padding: 10px;
+        text-align: justify;
+    }
+
+
+
+
+}
+

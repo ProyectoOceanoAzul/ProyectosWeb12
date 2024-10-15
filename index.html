@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <script src="https://kit.fontawesome.com/2ad58faca7.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Maquetacion</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <div class="superior__logo">
+                    <h1>Productive</h1>
+                </div>
+
+
+                <div class="superior__menu">
+                    <ul class="menu__opciones">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- contenedor__banner -->
+        <section class="contenedor__banner">
+
+            <div class="contenedor">
+
+                <div class="banner__titulo">
+                    <h2 class="titulo__banner">
+                        Productive <br> Free and Easy
+                    </h2>
+                </div>
+
+
+                <div class="banner__texto">
+                    <div class="texto__lado1">
+                        <h3>
+                            New
+                        </h3>
+                    </div>
+
+                    <div class="texto__lado2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga eaque aspernatur
+                            laborum quibusdam iure cumque earum! Quibusdam, voluptatem temporibus dignissimos
+                            consequatur reprehenderit nostrum modi. Repudiandae reprehenderit ratione laudantium quaerat
+                            animi fugit, incidunt illo nulla.
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </header>
+
+
+    <!-- contenedor__about -->
+    <section class="contenedor__about" id="About">
+        <div class="contenedor">
+
+            <div class="about__titulo">
+                <h4>About</h4>
+            </div>
+
+
+            <div class="about__grupo">
+                <div class="lado1">
+                    <p class="parrafo1">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quibusdam! Quis harum
+                        quos culpa possimus doloribus, voluptatem perspiciatis debitis obcaecati laborum. Recusandae non
+                        expedita doloremque nulla! Impedit, sunt id dignissimos aperiam, illum distinctio quis ut
+                        quisquam, minima et consequuntur maxime!
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus fuga illo at veritatis
+                        odio. Totam, molestiae corporis consequatur, officia exercitationem a voluptatum laboriosam ex
+                        labore, architecto distinctio delectus? Adipisci veritatis neque illum eum necessitatibus
+                        sapiente voluptas similique, aspernatur temporibus cupiditate saepe provident animi eveniet
+                        laboriosam aliquid dignissimos officia alias aut quia consequuntur! Ut quaerat minima eaque
+                        velit odio voluptatibus reiciendis, animi, quisquam in labore illo eveniet voluptas asperiores
+                        magnam? Quia, tempore amet. Et eos ad explicabo dolorem amet sunt, possimus culpa est animi vero
+                        ea accusamus ipsum officiis nam quibusdam? Iure, voluptas at aut temporibus aliquam tenetur
+                        quis. Tempore similique suscipit cupiditate facere dolorem eaque. Hic id qui quidem deleniti
+                        soluta esse veritatis architecto voluptate.
+                    </p>
+
+                </div>
+
+                <div class="lado2">
+                    <img src="./imagenes/about.jpg" alt="about" title="about">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- contenedor__about -->
+    <section class="contenedor__contact" id="Contact">
+        <div class="contenedor">
+
+            <div class="contact__formulario">
+
+                <form action="#">
+                    <div class="form__group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form__control"
+                            required="yes">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="form__control"
+                            required="yes">
+                    </div>
+
+
+                    <div class="form__group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" role="10" placeholder="Mensaje"
+                            class="form__control" required>
+                        </textarea>
+                    </div>
+
+                    <button class="btn btn--gray">
+                        Submit
+                    </button>
+
+
+
+                </form>
+
+
+            </div>
+
+
+
+            <div class="contact__titulo">
+                <h4>Contact</h4>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- pie -->
+    <footer class="contenedor__footer">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    © 2024 Derechos Reservados, Diseñado por <span>93R50N</span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
